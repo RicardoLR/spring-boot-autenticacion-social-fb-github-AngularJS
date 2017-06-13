@@ -1,0 +1,39 @@
+
+# seguridad basica, con usuario: richi
+# curl richi:richisecret@localhost:8080/oauth/token -d grant_type=client_credentials
+
+
+security:
+  oauth2:
+    client:
+      client-id: richi
+      client-secret: richisecret
+      scope: read,write
+      auto-approve-scopes: '.*'
+
+facebook:
+  client:
+    clientId: 152083908667560
+    clientSecret: 7bfd9475b2ae40ff19c91d66e40f403a
+    accessTokenUri: https://graph.facebook.com/oauth/access_token
+    userAuthorizationUri: https://www.facebook.com/dialog/oauth
+    tokenName: oauth_token
+    authenticationScheme: query
+    clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://graph.facebook.com/me
+
+    
+github:
+  client:
+    clientId: Iv1.c6ab761a80cf496e
+    clientSecret: 7ca4859690eaeb300633ca9e6bcdc4d48d82850b
+    accessTokenUri: https://github.com/login/oauth/access_token
+    userAuthorizationUri: https://github.com/login/oauth/authorize
+    clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://api.github.com/user
+
+logging:
+  level:
+    org.springframework.security: DEBUG

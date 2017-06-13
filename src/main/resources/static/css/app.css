@@ -1,0 +1,103 @@
+body{
+	background-color: #EA80FC;
+}
+
+
+#header-container,
+#info-container {
+  background-color: #EA80FC;
+  color: white;
+}
+
+/** =================================================== 
+	Imagenes svg en header
+=================================================== */
+
+.img-svg{
+	width: 200px;
+	height: 200px;
+}
+
+img{  
+  display:flex;
+  margin:0 auto;
+}
+
+
+
+#info-container h4 {
+  text-align: center;
+}
+
+
+.container-fluid>.navbar-collapse, 
+.container-fluid>.navbar-header, 
+.navbar-collapse, 
+.container-fluid,
+.navbar-header,
+.navbar.navbar-default,
+
+
+.navbar-default .navbar-nav>li>a{  
+	background-color: #EA80FC;
+	color: white;
+	border: 0;
+}
+
+/** navbar EMPRESA*/
+.navbar-default .navbar-brand{
+	color: white;
+}
+
+
+/** fondo de las 3 lineas en toogle nav */
+.navbar-default .navbar-toggle{
+	background-color: white;
+	color: black;
+}
+
+/** color text de sub menu */
+.navbar-default .navbar-nav .open .dropdown-menu,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+	background-color: #EA80FC;
+    color: white;
+}
+
+/**  Quitar todo color de sub meno al hacer hover  
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+            background-image:none !important;
+ }
+ .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+            background-color:red
+ }
+*/
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+            background-image:none !important;
+ }
+ .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+            background-color:gray !important;
+ }
+
+
+/** Sobrescribir el color de clase ACTIVE   */
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+   color: white;
+   background: gray;
+}
+
+/** Boton enviar en navbar */
+.btn.btn-my-nav{
+	background-color: white;
+	color: #EA80FC;
+	border: 1;
+}
+
+.btn.btn-my-nav:hover{
+	background-color: #EA80FC;
+	border: 1;
+	border-color: white;
+	color: white;
+}
